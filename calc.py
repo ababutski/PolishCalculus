@@ -1,5 +1,5 @@
 import sys
-# dictionary with operators(kes) and their priority (values)
+# dictionary with operators(keys) and their priority (values)
 OPERATORS = {
     '+':0,'-':0,
     '*':1,'/':1,
@@ -87,7 +87,7 @@ def calc_rpn(tokens):
 # reading arguments as single string
 line = ''.join(sys.argv[1:])
 # removing whitespaces from string
-#line = '3+4*2/((1-5)*2*3)'
+#line = '1+2*3*(2+10)'
 line = line.replace(" ", "")
 rpn = to_reverse_polish(line)
 print(' '.join(rpn))
